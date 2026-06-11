@@ -1,0 +1,57 @@
+/* ==========================================
+   📌 RESET & BASE STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+
+/* ==========================================
+   💻 LAPTOP SYSTEM (Badi Screen)
+   ========================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    color: white; 
+}
+
+.links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px;
+}
+
+/* 💻 Laptop par hamburger icon chhup jaye */
+.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+    display: none !important; 
+}
+
+/* ==========================================
+   📱 MOBILE SYSTEM (Choti Screen < 480px)
+   ========================================== */
+@media (max-width: 480px) {
+    
+    /* 🚫 Mobile par saare links chhup jayein */
+    .links {
+        display: none !important; 
+    }
+
+    /* ✨ Mobile par hamburger icon aa jaye */
+    .fa-bars {
+        display: block !important; 
+        color: white;
+    }
+    
+} /* 👈 Yeh bracket poori media query ko band karta hai */
